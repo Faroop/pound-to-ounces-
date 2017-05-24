@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<title>Pounds to Ounces Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+<p>Type a value in the Pounds field to convert the value to Ounces:</p>
+
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Ounces: <span id="outputOunces"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputOunces").innerHTML=valNum*16;
+}
+</script>
+</body>
+</html>
